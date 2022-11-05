@@ -39,7 +39,7 @@ Mobile
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/interactive-card-details-vanilla-js-J7EW0FM6-u)
 - Live Site URL: [Live site URL](https://interactive-card-details-nu.vercel.app/)
 
 ## My process
