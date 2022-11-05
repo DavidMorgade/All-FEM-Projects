@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fira+Code:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="backdrop"></div>
+      <img src="./images/logo.svg" alt="Snap company logo" />
+      <nav class="menu__nav--desktop">
+        <ul class="menu__list--desktop">
+          <li class="menu__features--desktop"
+            >Features
+            <ul class="features--desktop submenu--desktop">
+              <a href="#">Todo List</a>
+              <a href="#">Calendar</a>
+              <a href="#">Reminders</a>
+              <a href="#">Planning</a>
+            </ul>
+          </li>
+          <li class="menu__company--desktop"
+            >Company
+            <ul class="company--desktop submenu--desktop">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </ul></li
+          >
+          <li><a href="#">Carrers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <div class="menu__buttons--desktop">
+        <button class="menu__button--desktop">Login</button>
+        <button class="menu__button--desktop menu__button--register--desktop"
+          >Register</button
+        >
+      </div>
+      <button class="menu" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path
+            class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+          />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path
+            class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+          />
+        </svg>
+      </button>
+      <div class="menu__container">
+        <nav class="menu__nav">
+          <ul class="menu__list">
+            <li class="menu__features"
+              >Features
+              <ul class="features submenu">
+                <a href="#">Todo List</a>
+                <a href="#">Calendar</a>
+                <a href="#">Reminders</a>
+                <a href="#">Planning</a>
+              </ul>
+            </li>
+            <li class="menu__company"
+              >Company
+              <ul class="company submenu">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </ul></li
+            >
+            <li><a href="#">Carrers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </nav>
+        <div class="menu__buttons">
+          <button class="menu__button">Login</button>
+          <button class="menu__button menu__button--register">Register</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__pictureContainer">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="./images/image-hero-desktop.png"
+          />
+          <img
+            class="main__picture"
+            src="./images/image-hero-mobile.png"
+            alt="Employee remote working with a laptop"
+          />
+        </picture>
+      </div>
+      <section class="section">
+        <div class="section__textContainer">
+          <h1 class="section__heading">Make <span> remote work </span></h1>
+          <p class="section__text"
+            >Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.</p
+          >
+          <div class="btn__wrapper">
+            <button class="btn section__btn">Learn more</button>
+          </div>
+        </div>
+        <div class="section__logos">
+          <img src="./images/client-databiz.svg" alt="logo databiz" />
+          <img src="./images/client-audiophile.svg" alt="logo audiophile" />
+          <img src="./images/client-meet.svg" alt="logo meet" /><img
+            src="./images/client-maker.svg"
+            alt="logo maker"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text"
+        >Challenge completed by David Morgade for FrontEndMentor.io</p
+      >
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
