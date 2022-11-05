@@ -1,0 +1,52 @@
+@import './styles/Normalize.css';
+html {
+  scroll-behavior: smooth;
+}
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+.swiper-button-next {
+  top: 88% !important;
+  left: 8rem !important;
+  width: 4rem !important;
+  height: 4rem !important;
+  box-shadow: 0 0 0 1px red;
+  border-radius: 2rem;
+}
+.swiper-button-next::after {
+  font-size: 1.2rem !important;
+  color: #f94f4f;
+}
+/*Seguir con el botton after*/
+.swiper-button-prev {
+  top: 88% !important;
+  left: 2rem !important;
+  width: 4rem !important;
+  height: 4rem !important;
+  box-shadow: 0 0 0 1px red;
+  border-radius: 2rem;
+}
+.swiper-button-prev::after {
+  font-size: 1.2rem !important;
+  color: #f94f4f;
+}
+@media (min-width: 768px) {
+  .swiper-button-next {
+    top: 50% !important;
+    left: 10rem !important;
+  }
+  .swiper-button-prev {
+    top: 50% !important;
+    left: 4rem !important;
+  }
+}
+@media (min-width: 1440px) {
+  .swiper-button-next {
+    top: 75% !important;
+    left: 22rem !important;
+  }
+  .swiper-button-prev {
+    top: 75% !important;
+    left: 16rem !important;
+  }
+}
