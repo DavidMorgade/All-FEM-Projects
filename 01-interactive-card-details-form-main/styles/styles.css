@@ -120,7 +120,6 @@ body {
     align-self: flex-start;
     width: 44.7rem;
     height: 24.5rem;
-    box-shadow: 58px 74px 50px -57px rgba(99, 99, 99, 0.43);
   }
   .card__cvc {
     width: 36.1rem;
@@ -194,7 +193,6 @@ body {
     grid-row: 1 / 2;
     width: 44.7rem;
     height: 24.5rem;
-    box-shadow: 58px 74px 50px -57px rgba(99, 99, 99, 0.43);
   }
   .card__logo {
     width: 8.4rem;
