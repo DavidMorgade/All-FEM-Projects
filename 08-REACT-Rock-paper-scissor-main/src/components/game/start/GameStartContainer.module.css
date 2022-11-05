@@ -1,0 +1,17 @@
+.container {
+  position: relative;
+  bottom: 10rem;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 40% 10% 50%;
+}
+@media (min-width: 1366px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 100%;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+}

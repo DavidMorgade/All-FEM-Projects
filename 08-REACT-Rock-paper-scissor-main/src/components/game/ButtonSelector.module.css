@@ -1,0 +1,27 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  background: rgb(209, 200, 200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  align-self: center;
+  z-index: 10;
+  padding: 2rem 3rem;
+}
+.img {
+  /* background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+  width: 4rem;
+  height: 5rem;
+}
+@media (min-width: 1366px) {
+  .button {
+    padding: 4rem 6rem;
+  }
+  .img {
+    /* background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+    width: 8rem;
+    height: 10rem;
+  }
+}

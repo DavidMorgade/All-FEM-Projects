@@ -1,0 +1,14 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  justify-self: flex-end;
+  padding: 1.5rem 6rem;
+  background-color: white;
+  color: var(--darkText);
+  border-radius: 1rem;
+  letter-spacing: 0.3rem;
+}
+.button:hover {
+  transition: color 1s;
+  color: red;
+}

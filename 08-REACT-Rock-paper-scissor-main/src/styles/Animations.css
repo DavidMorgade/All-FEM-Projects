@@ -1,0 +1,136 @@
+@keyframes dissapear {
+  0% {
+    opacity: 1;
+    transform: rotateY(90deg), scale(0.99);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotateY(0deg);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+}
+@keyframes rotating {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes comeTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes browserText {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(145%);
+  }
+}
+@keyframes humanText {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-230%);
+  }
+}
+@keyframes btnDissapear {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.btnDissapear {
+  animation-name: btnDissapear;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+}
+@media (min-width: 1366px) {
+  .textHumanAnimation {
+    animation-name: humanText;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+  .textBrowserAnimation {
+    animation-name: browserText;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+  .resultAnimation {
+    animation-name: browser;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+  }
+}
+
+.dissapear {
+  animation-name: dissapear;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+}
+.resalted {
+  transform: scale(2);
+}
+.topAnimation {
+  animation: linear;
+  animation-name: comeTop;
+  animation-duration: 0.5s;
+  animation-delay: 4s;
+}
+.appear {
+  animation: rotating 2s linear forwards;
+}

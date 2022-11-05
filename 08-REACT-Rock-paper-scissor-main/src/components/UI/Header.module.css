@@ -1,0 +1,24 @@
+.header {
+  border: 3px solid var(--headerOutline);
+  height: 10%;
+  width: 85%;
+  justify-self: flex-start;
+  position: relative;
+  bottom: 6rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 0 1rem;
+}
+@media (min-width: 1366px) {
+  .header {
+    bottom: -1rem;
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}

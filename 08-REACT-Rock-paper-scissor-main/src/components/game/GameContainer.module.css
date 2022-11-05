@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  bottom: 10rem;
+  width: 95%;
+  max-width: 36rem;
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: 33% 33% 33%;
+  overflow: hidden;
+}
+@media (min-width: 1366px) {
+  .container {
+    bottom: 0;
+    width: 80rem;
+    max-width: unset;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-items: center;
+    margin-bottom: 10rem;
+  }
+}
+.bgImage {
+  background-image: url('/public/bg-triangle.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 25rem 20rem;
+}
+@media (min-width: 1366px) {
+  .bgImage {
+    background-size: 40rem 30rem;
+  }
+}
