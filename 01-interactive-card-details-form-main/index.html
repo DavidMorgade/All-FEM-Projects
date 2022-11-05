@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/Normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="header__cards">
+          <div class="card__reverse">
+            <div class="card__cvc">
+              <p class="card__text">000</p>
+            </div>
+          </div>
+          <div class="card__front">
+            <div class="card__logo">
+              <img src="./images/card-logo.svg" alt="credit card logo" />
+            </div>
+            <p class="card__number">0000 0000 0000 0000</p>
+            <div class="card__bottom">
+              <h1 class="card__name">Jane Appleseed</h1>
+              <p class="card__expire">
+                <span class="card__expire--month">00</span>/<span
+                  class="card__expire--year"
+                  >00</span
+                ></p
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+      <form class="form">
+        <div class="form__container">
+          <label class="form__label" for="cardholder">Cardholder Name</label>
+          <input
+            class="form__input"
+            type="text"
+            name="cardholder"
+            id="cardholder"
+            autocomplete="off"
+            maxlength="28"
+          />
+          <span class="placeholder">e.g. Jane Appleseed</span>
+        </div>
+        <div class="form__container">
+          <label class="form__label" for="cardnumber">Card number</label>
+          <input
+            class="form__input"
+            type="text"
+            name="cardnumber"
+            id="cardnumber"
+            autocomplete="off"
+            maxlength="19"
+          />
+          <span class="placeholder">e.g. 1234 5678 9123 0000</span>
+        </div>
+        <div class="form__container">
+          <div class="form__date">
+            <label class="form__label" for="month">Exp. Date (MM/YY)</label>
+            <div class="form__date--input">
+              <input
+                class="form__input"
+                type="text"
+                name="month"
+                id="month"
+                maxlength="2"
+                autocomplete="off"
+              />
+              <span class="placeholder">MM</span>
+              <input
+                class="form__input"
+                type="text"
+                name="year"
+                id="year"
+                maxlength="2"
+                autocomplete="off"
+              />
+              <span class="placeholder">YY</span>
+            </div>
+          </div>
+          <div class="form__cvc">
+            <label class="form__label" for="cvc">CVC</label>
+            <input
+              class="form__input"
+              type="text"
+              name="cvc"
+              id="cvc"
+              maxlength="3"
+              autocomplete="off"
+            />
+            <span class="placeholder">e.g. 123</span>
+          </div>
+        </div>
+
+        <input
+          type="submit"
+          value="Confirm"
+          id="confirm"
+          class="form__submit disabled"
+          disabled
+        />
+      </form>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
