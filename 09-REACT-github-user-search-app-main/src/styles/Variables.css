@@ -1,0 +1,9 @@
+:root {
+  /* Colors */
+  --blue: rgb(0, 121, 255);
+  --white: rgb(255, 255, 255);
+  --darkMode: #141D2F;
+  --darkBlue: rgb(30, 42, 71);
+  /* Fonts */
+  --font: 'Space Mono', monospace;
+}
