@@ -1,0 +1,58 @@
+@import 'styles/mixins';
+@import 'styles/variables';
+
+.navbar {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  padding: 3rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+@include tablet {
+  .navbar {
+    justify-self: flex-end;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @supports (backdrop-filter: blur()) {
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+    }
+    width: 83rem;
+    height: 9.6rem;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 4rem;
+    }
+  }
+}
+@include desktop {
+  .navbar {
+    ul {
+      position: relative;
+
+      &::after {
+        content: '';
+        width: 60rem;
+        border-bottom: 1px solid #fff;
+        position: absolute;
+        left: -110%;
+        top: 52%;
+        z-index: 1;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  gap: 2rem;
+  &__element {
+    list-style: none;
+  }
+  &__button {
+    all: unset;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    opacity: 0.17;
+    border-radius: 100%;
+
+    &:hover {
+      background: #ffffff;
+      opacity: 0.5;
+    }
+    &__selected {
+      background-color: $white;
+      opacity: 1;
+    }
+  }
+  @include desktop {
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-left: 10rem;
+    &__button {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

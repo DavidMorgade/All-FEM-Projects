@@ -1,0 +1,82 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.list {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  li {
+    list-style: none;
+  }
+
+  &__button {
+    all: unset;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $light;
+    text-transform: uppercase;
+    font-family: $secondFont;
+    line-height: 1.7rem;
+    letter-spacing: 2.3625px;
+    padding: 1rem 0;
+    &::after {
+      display: block;
+      content: '';
+      border-bottom: solid 2px #fff;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+      // outline: 3px solid;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+  &__button__selected {
+    all: unset;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $secondFont;
+    line-height: 1.7rem;
+    letter-spacing: 2.3625px;
+    padding: 1rem 0;
+    &::after {
+      display: block;
+      content: '';
+      border-bottom: solid 2px #fff;
+      mix-blend-mode: normal;
+      opacity: 1;
+      transform: scaleX(1);
+      transition: transform 250ms ease-in-out;
+      // outline: 3px solid;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+    }
+  }
+}
+@include tablet {
+  .list {
+    justify-content: center;
+    gap: 3.5rem;
+
+    &__button {
+      font-size: 1.6rem;
+      line-height: 1.92rem;
+      letter-spacing: 2.7px;
+    }
+  }
+}
+@include desktop {
+  .list {
+    width: 30rem;
+    align-self: flex-end;
+  }
+}

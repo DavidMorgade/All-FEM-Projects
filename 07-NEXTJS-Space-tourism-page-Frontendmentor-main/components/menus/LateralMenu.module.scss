@@ -1,0 +1,30 @@
+.menu {
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(
+    360deg,
+    rgba(254, 254, 254, 1) 2%,
+    rgba(150, 149, 165, 1) 20%,
+    rgba(3, 2, 20, 1) 37%
+  );
+  @supports (backdrop-filter: blur()) {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    opacity: 1;
+  }
+  opacity: 0.9;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 80% 10%;
+  &__button {
+    all: unset;
+    grid-column: 2 / 3;
+    align-self: flex-start;
+    justify-self: flex-end;
+    margin-top: 3.5rem;
+    cursor: pointer;
+  }
+}

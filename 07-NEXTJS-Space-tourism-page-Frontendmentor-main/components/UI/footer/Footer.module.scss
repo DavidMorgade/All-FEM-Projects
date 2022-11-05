@@ -1,0 +1,45 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  &__button {
+    all: unset;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: $black;
+    background-color: $white;
+    padding: 6.8rem 2.75rem 5.9rem 2.95rem;
+    border-radius: 100%;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-family: $firstFont;
+    margin-top: 8.1rem;
+
+    &:hover {
+      box-shadow: 0 0 0 8.8rem rgba(105, 105, 105, 0.7);
+      transition: box-shadow 0.5s ease-in;
+    }
+  }
+}
+@include tablet {
+  .footer__button {
+    margin-top: 20rem;
+  }
+}
+@include desktop {
+  .footer__button {
+    margin: 0;
+    padding: 0;
+    width: 27.4rem;
+    height: 27.4rem;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 10rem;
+    font-size: 3.2rem;
+    line-height: 3.667rem;
+  }
+}

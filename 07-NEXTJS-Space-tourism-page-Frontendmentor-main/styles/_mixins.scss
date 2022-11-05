@@ -1,0 +1,24 @@
+@import 'variables';
+
+/** Media Queries **/
+
+@mixin phone {
+  @media (min-width: $phone) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+@mixin desktopXl {
+  @media (min-width: $desktopXl) {
+    @content;
+  }
+}
