@@ -1,0 +1,4 @@
+@import './styles/Normalize.css';
+.error {
+  border: 2px solid red !important;
+}
