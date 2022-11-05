@@ -1,0 +1,8 @@
+@import './styles/Normalize.css';
+@import './styles/Variables.css';
+
+@font-face {
+  font-family: 'JetBrains';
+  src: local('JetBrainsMono-VariableFont_wght.ttf'),
+    url(./fonts/JetBrainsMono-VariableFont_wght.ttf) format('ttf');
+}
