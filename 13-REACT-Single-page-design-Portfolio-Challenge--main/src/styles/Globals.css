@@ -1,0 +1,78 @@
+body {
+    font-family: var(--font);
+    font-weight: 700;    
+}
+.swiper {
+    height: 30.8rem;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white)
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--red) !important;
+}
+@media (min-width: 768px) {
+    .swiper {
+        height: 100%;
+    }
+    .swiper-slide {
+        background-color: var(--white);
+    }
+    .swiper-button-prev {
+        background-image: url(../images/icon-arrow-left.svg);
+        background-position: center center;
+        width: 6.4rem !important;
+        height: 6.4rem !important;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-color: black;
+        color: black !important;
+        bottom: 0;
+        top: 50rem !important;
+        left: 31rem !important;
+    }
+    .swiper-button-next {
+        background-image: url(../images/icon-arrow-right.svg);
+        background-position: center center;
+        width: 6.4rem !important;
+        height: 6.4rem !important;
+        border-radius: 50%;
+        background-repeat: no-repeat;
+        background-color: black;
+        color: black !important;
+        top: 50rem !important;
+        right: 31rem !important;
+    }
+}
+@media (min-width: 1440px) {
+    .swiper {
+        height: 53.6rem;
+        margin-top: 5.6rem;
+    }
+    .swiper-slide {
+       width: 54rem !important;
+       height: 36rem !important;
+       cursor:grabbing;
+    }
+    .swiper-button-prev {
+        top: 43rem !important;
+        left: 64rem !important;
+    }
+    .swiper-button-prev:hover {
+        background-color: var(--blue);
+        color: var(--blue) !important;
+        transition: all .5s ease;
+    }
+    .swiper-button-next {
+        top: 43rem !important;
+        right: 64rem !important;
+    }
+    .swiper-button-next:hover {
+        background-color: var(--blue);
+        color: var(--blue) !important;
+        transition: all .5s ease;
+    }
+}
