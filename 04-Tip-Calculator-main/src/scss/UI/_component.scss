@@ -1,0 +1,208 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main {
+    height: 100vh;
+    background-color: v.$lightGrayCyan;
+    &__heading {
+        text-align: center;
+        margin: 0;
+        padding: 4rem;
+        text-transform: uppercase;
+        color: v.$darkGrayCyan;
+        font-size: 2.4rem;
+        letter-spacing: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
+        @include m.tablet {
+            margin-bottom: 5rem;
+        }
+    }
+}
+.calculator {
+    background-color: v.$white;
+    padding: 4rem 2rem;
+    width: 100%;
+    border-radius: 2rem;
+    
+
+    &__text {
+        color: v.$darkGrayCyan;
+        font-weight: bold;
+        margin: 0;
+        padding: 1rem 0rem;
+        margin-bottom: 1rem;
+        
+        span {
+            color: rgb(250, 153, 153);
+            padding-left: 5rem;
+        }
+    }
+    &__input {
+        background-color: v.$veryLightGray;
+        border: none;
+        text-align: right;
+        appearance: textfield;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        background-image: url(../img/icon-dollar.svg);
+        background-repeat: no-repeat;
+        background-position: center left 5%;
+        margin-bottom: 1rem;
+        color: v.$secondary;
+        font-weight: bold;
+        font-family: v.$firstFont;
+        border: 2px solid transparent;
+        cursor: pointer;
+        &:hover {
+            background-color: v.$veryLightGray;
+            border: 2px solid v.$primary;
+        }
+        &--ppl {
+            background-image: url(../img/icon-person.svg);
+            
+            
+        }
+    }
+    &__percents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+        width: 100%;
+    }
+    &__btn {
+        width: 95%;
+        height: 100%;
+        place-self: center;
+        text-align: center;
+        background-color: v.$secondary;
+        color: v.$white;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 3px 0.5rem;
+        cursor: pointer;
+        &:hover {
+            transition: all 0.5s;
+            background-color: v.$lightGrayCyan;
+            color: v.$secondary;;
+        }
+        &--selected {
+            background-color: v.$primary;
+            transition: background-color 0.2s;
+            
+        }
+
+        &--mod {
+            background-color: v.$veryLightGray;
+            color: v.$secondary;
+            appearance: textfield;
+            border: 2px solid transparent ;
+            padding: 5px 0;
+            &:hover {
+                background-color: v.$veryLightGray;
+                border: 2px solid v.$primary;
+            }
+
+        }
+    }
+    &__display {
+        margin-top: 3rem;
+        background-color: v.$secondary;
+        padding: 3rem;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__amount {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__person {
+        color: v.$white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 0;
+        span {
+            font-size: 1.2rem;
+            display: block;
+            color: v.$darkGrayCyan;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+    }
+    &__prize {
+        font-weight: bold;
+        color: v.$primary;
+        font-size: 3rem;
+        margin: 0;
+    }
+    &__reset {
+        text-align: center;
+        align-self: center;
+        margin-top: rem;
+        padding: 1.5rem 0;
+        border-radius: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        width: 100%;
+        background-color: v.$primary;
+        font-weight: bold;
+        color: v.$secondary;
+        &:hover {
+            transition: all 0.5s;
+            background-color: v.$lightGrayCyan;
+        }
+    }
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        height: 50rem;
+        width: 90rem;
+        padding: 3rem 3rem;
+        &__display {
+            padding: 5rem 5rem;
+        }
+        &__inputs {
+            padding-left: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        &__percents {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 90%;
+            gap: 2rem;
+        }
+        &__btn {
+            width: 100%;
+        }
+        &__amount {
+            margin-bottom: 1rem;
+        }
+        &__person span {
+            margin: 0;
+
+        }
+        &__display {
+            justify-content: flex-start;
+            margin-top: 0;
+        }
+        &__reset {
+            margin-top: auto;
+        }
+        &__prize {
+            font-size: 5rem;
+        }
+        &__text {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
