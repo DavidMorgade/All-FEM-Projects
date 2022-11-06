@@ -28,7 +28,10 @@
     <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">Report Bug</a>
     ·
     <a href="https://github.com/DavidMorgade/All-FEM-Projects/pulls">Request Feature</a>
+        ·
+    <a href="https://www.frontendmentor.io/profile/DavidMorgade">FEM Profile</a>
   </h2>
+  
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -43,6 +46,30 @@
       <ul>
         <li><a href="#technologies">Technologies</a></li>
       </ul>
+      <ul>
+        <li>
+          <details>
+            <summary>Projects</summary>
+            <ol>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/01-interactive-card-details-form-main">VANILLAJS - Interactive Card Details Form</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/02-AdviceGeneratorApp-main">VANILLAJS - Advice Generator App</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/03-E-commerce-product-page-main">VANILLAJS - E-Commerce Product Page</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/04-Tip-Calculator-main">VANILLAJS - Tip Calculator</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/05-Interactive-Rate-Component-main">VANILLAJS - Interactive Rate Component</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/06-REACT-Time-Tracking-Dashboard-main">REACT - Time Tracking Dashboard</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/07-NEXTJS-Space-tourism-page-Frontendmentor-main">NEXTJS - Space Tourism SPA</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/08-REACT-Rock-paper-scissor-main">REACT - Rock, Paper, Scissors</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/09-REACT-github-user-search-app-main">REACT - Github User Search App</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/10-REACT-IP-Address-tracker-main">REACT - Ip Address Tracker</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/11-REACT-Triple-themed-QR-component-main">REACT - QR Component</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/12-REACT-Single-page-design-Portfolio-main">REACT - Single Page Design Portfolio</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/13-REACT-Creative-Agency-single-page-main">REACT - Creative Agency Single Page</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/14-VANILLAJS-IntroSection-Dropdown-main">VANILLAJS - IntroSection Dropdown Navigation</a></li>
+              <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/15-REACT-Password-generator-main">REACT - Password Generator</a></li>
+            </ol>
+          </details>
+        </li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -55,6 +82,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
+
   </ol>
 </details>
 
@@ -84,19 +112,13 @@ I Hope that any info on this repository can help you get through any kind of cha
 
 - [![Next][next.js]][next-url]
 
-  <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">NextJS Projects</a>
-
   <br/>
 
 - [![React][react.js]][react-url]
 
-  <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">React - Create React App Projects</a>
-
   <br/>
 
 - [![Javascript][javascript.com]][javascript-url]
-
-  <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">Vanilla Javascript Projects</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,7 +208,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,6 +222,10 @@ Project Link: [https://github.com/DavidMorgade/All-FEM-Projects](https://github.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Acknowledgments
+
+README created using a template from <a href="https://github.com/othneildrew">othneildrew</a> , github repository: <a href="https://github.com/othneildrew/Best-README-Template">Best-README-Template</a>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
@@ -207,12 +233,12 @@ Project Link: [https://github.com/DavidMorgade/All-FEM-Projects](https://github.
 [contributors-url]: https://github.com/DavidMorgade/All-FEM-Projects/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
 [forks-url]: https://github.com/DavidMorgade/All-FEM-Projects/network/members
-[stars-shield]: https://img.shields.io/github/stars/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge&color=d6c157
 [stars-url]: https://github.com/DavidMorgade/All-FEM-Projects/stargazers
-[issues-shield]: https://img.shields.io/github/issues/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge&color=8f0000
 [issues-url]: https://github.com/DavidMorgade/All-FEM-Projects/LICENSE
 [license-shield]: https://img.shields.io/github/license/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
-[license-url]: https://github.com/DavidMorgade/All-FEM-Projects/blob/main/LICENSE
+[license-url]: https://github.com/DavidMorgade/All-FEM-Projects/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&logoColor=black&color=1dddd7
 [linkedin-url]: https://www.linkedin.com/in/davidmorgade/
 [product-screenshot]: Screenshots/ProfileFEM.png
@@ -232,5 +258,5 @@ Project Link: [https://github.com/DavidMorgade/All-FEM-Projects](https://github.
 [bootstrap-url]: https://getbootstrap.com
 [jquery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [jquery-url]: https://jquery.com
-[javascript.com]: https://img.shields.io/badge/javascript-000000?style=for-the-badge&logo=javascript&logoColor=yellow
+[javascript.com]: https://img.shields.io/badge/javascript-000222?style=for-the-badge&logo=javascript&logoColor=yellow
 [javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
