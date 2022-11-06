@@ -28,7 +28,7 @@
     <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">Report Bug</a>
     ·
     <a href="https://github.com/DavidMorgade/All-FEM-Projects/pulls">Request Feature</a>
-        ·
+    ·
     <a href="https://www.frontendmentor.io/profile/DavidMorgade">FEM Profile</a>
   </h2>
   
@@ -50,7 +50,7 @@
         <li>
           <details>
             <summary>Projects</summary>
-            <ol>
+            <ol type='1'>
               <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/01-interactive-card-details-form-main">VANILLAJS - Interactive Card Details Form</a></li>
               <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/02-AdviceGeneratorApp-main">VANILLAJS - Advice Generator App</a></li>
               <li><a href="https://github.com/DavidMorgade/All-FEM-Projects/tree/main/03-E-commerce-product-page-main">VANILLAJS - E-Commerce Product Page</a></li>
