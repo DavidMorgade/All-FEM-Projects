@@ -27,7 +27,7 @@
     <br />
     <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">Report Bug</a>
     ·
-    <a href="https://github.com/DavidMorgade/All-FEM-Projects/issues">Request Feature</a>
+    <a href="https://github.com/DavidMorgade/All-FEM-Projects/pulls">Request Feature</a>
   </h2>
 </div>
 
@@ -210,9 +210,9 @@ Project Link: [https://github.com/DavidMorgade/All-FEM-Projects](https://github.
 [stars-shield]: https://img.shields.io/github/stars/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
 [stars-url]: https://github.com/DavidMorgade/All-FEM-Projects/stargazers
 [issues-shield]: https://img.shields.io/github/issues/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
-[issues-url]: https://github.com/DavidMorgade/All-FEM-Projects/issues
+[issues-url]: https://github.com/DavidMorgade/All-FEM-Projects/LICENSE
 [license-shield]: https://img.shields.io/github/license/DavidMorgade/All-FEM-Projects.svg?style=for-the-badge
-[license-url]: https://github.com/DavidMorgade/All-FEM-Projects/blob/master/LICENSE.txt
+[license-url]: https://github.com/DavidMorgade/All-FEM-Projects/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&logoColor=black&color=1dddd7
 [linkedin-url]: https://www.linkedin.com/in/davidmorgade/
 [product-screenshot]: Screenshots/ProfileFEM.png
