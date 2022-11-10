@@ -1,18 +1,21 @@
 export const lightTheme = {
-  body: '#D5E1EF',
-  main: '#FFFFFF',
-  heading: '#1F314F',
-  text: '#7D889E',
+  body: '#1E213F',
+  text: '#D7E0FF',
+  menuText: '#161932',
+  change: '#F87070',
+  white: '#FFFFFF',
 };
 export const darkTheme = {
-  body: '#141D2F',
-  main: '#1E2A47',
-  heading: '#FFFFFF',
-  text: '#7D889E',
+  body: '#1E213F',
+  text: '#D7E0FF',
+  menuText: '#161932',
+  change: '#70F3F8',
+  white: '#FFFFFF',
 };
 export const pinkTheme = {
-  body: '#D2B9B5',
-  main: '#E89E9E',
-  heading: '#1F314F',
-  text: '#458588',
+  body: '#1E213F',
+  text: '#D7E0FF',
+  menuText: '#161932',
+  change: '#D881F8',
+  white: '#FFFFFF',
 };
