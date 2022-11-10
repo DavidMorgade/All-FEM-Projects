@@ -15,8 +15,8 @@ const StyledNumberInput = styled.input`
   }
 `;
 
-const NumberInput = ({ value }) => {
-  return <StyledNumberInput type="number" value={value} />;
+const NumberInput = ({ value, onChange }) => {
+  return <StyledNumberInput onChange={onChange} type="number" value={value} />;
 };
 
 export default NumberInput;

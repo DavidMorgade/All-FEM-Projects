@@ -11,12 +11,12 @@ const StyledRow = styled.div`
   justify-content: space-between;
 `;
 
-const NumberRow = ({ text, value }) => {
+const NumberRow = ({ text, value, onChange, plus, minus }) => {
   return (
     <StyledRow>
       <StyledLabel>{text}</StyledLabel>
-      <NumberInput value={value} />
-      <NumberArrows />
+      <NumberInput onChange={onChange} value={value} />
+      <NumberArrows plus={plus} minus={minus} />
     </StyledRow>
   );
 };

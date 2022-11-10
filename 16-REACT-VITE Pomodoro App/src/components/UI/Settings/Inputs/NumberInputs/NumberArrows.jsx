@@ -12,13 +12,13 @@ const ArrowButton = styled.button`
   cursor: pointer;
 `;
 
-const NumberArrows = () => {
+const NumberArrows = ({ plus, minus }) => {
   return (
     <ArrowsContainer>
-      <ArrowButton>
+      <ArrowButton onClick={plus}>
         <IconArrowUp />
       </ArrowButton>
-      <ArrowButton>
+      <ArrowButton onClick={minus}>
         <IconArrowDown />
       </ArrowButton>
     </ArrowsContainer>

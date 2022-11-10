@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import styled, { useTheme } from 'styled-components';
+import { useSettingsContext } from '../../../context/useSettingsContext';
 import { StyledH1, StyledH3 } from '../../Headings/Headings';
 
 const StyledBar = styled.div`
@@ -38,8 +39,10 @@ const ProgressBar = () => {
   const [percent, setPercent] = useState(100);
   // Getting Theme for the radial-gradient inline style
   const theme = useTheme();
+  // Gets time from settings context
+  const [settings, _] = useSettingsContext();
+  const minutesHard = settings[0];
   // Calculates the time on miliseconds when the time is set
-  const minutesHard = 20;
   const time = minutesHard * 60 * 1000 + Date.now();
   const getTime = (time) => {
     const timeLeft = time - Date.now();
