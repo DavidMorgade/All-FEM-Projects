@@ -41,7 +41,7 @@ Mobile Size
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/typescript-dummy-form-validation-_Uedto9fu5)
 - Live Site URL: [Add live site URL here](https://typescript-dummyform.netlify.app/)
 
 ## My process
