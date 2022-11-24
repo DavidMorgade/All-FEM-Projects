@@ -1,10 +1,12 @@
+import errorImg from '../images/icon-error.svg';
+
 const createWarning = (input: HTMLInputElement, warning: string): void => {
   removeWarning(input);
   const warningImg = document.createElement('img');
   const warningMsg = document.createElement('p');
   warningMsg.textContent = warning;
   warningMsg.classList.add('warningMsg');
-  warningImg.src = './src/images/icon-error.svg';
+  warningImg.src = errorImg;
   warningImg.classList.add('warningImg');
   input.classList.add('error');
   input.insertAdjacentElement('afterend', warningImg);
