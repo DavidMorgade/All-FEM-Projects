@@ -121,6 +121,7 @@ body {
 }
 @media (min-width: 1440px) {
   .description {
+    margin-top: 2rem;
     width: 30.2rem;
     height: 14rem;
   }
@@ -160,6 +161,11 @@ body {
   background-color: #2e405a;
   bottom: -1.6rem;
 }
+@media (min-width: 1440px) {
+  .description__bottom::after {
+    bottom: -2rem;
+  }
+}
 .description__eth {
   width: 8.848rem;
   display: flex;
@@ -173,6 +179,9 @@ body {
   color: #00fff8;
 }
 @media (min-width: 1440px) {
+  .description__eth {
+    width: 9.348rem;
+  }
   .description__prize {
     font-size: 1.6rem;
     line-height: 2.016rem;
@@ -207,6 +216,11 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+@media (min-width: 1440px) {
+  .footer {
+    margin-top: 3.8rem;
+  }
 }
 .footer__avatar {
   width: 3.3rem;
