@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-ZyOeo4moQV)
 - Live Site URL: [Live Site](https://nft-component-morgade.netlify.app/)
 
 ## My process
