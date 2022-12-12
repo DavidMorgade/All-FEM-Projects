@@ -1,0 +1,238 @@
+body {
+  background-color: #0d192c;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+}
+.card {
+  max-width: 30.3rem;
+  max-height: 51.9rem;
+  background-color: #15263f;
+  margin: 6.2rem 2.4rem;
+  padding: 2.4rem;
+  border-radius: 1.5rem;
+}
+@media (min-width: 1440px) {
+  .card {
+    max-width: 30.2rem;
+    min-height: 54.8rem;
+  }
+}
+.card__imgcont {
+  width: 100%;
+  border-radius: 0.8rem;
+  position: relative;
+}
+/* Hover mask */
+.card__mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 255, 248, 0);
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  transition: background-color 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__mask:hover {
+  background-color: rgba(0, 255, 248, 0.3);
+}
+.card__maskIcon {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.card__mask:hover .card__maskIcon {
+  opacity: 1;
+}
+/* Fake image on top of the real image */
+.card__imgcont::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center 53%;
+  background-size: 40%;
+  transition: all 5s ease;
+  background-image: url(../images/nft-nobg.png);
+  opacity: 0.6;
+  z-index: 1;
+}
+.card__imgcont:hover::after {
+  background-size: 50%;
+  transform: rotate(720deg);
+  cursor: pointer;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 0.8rem;
+  position: relative;
+}
+/* Glancing animation */
+.card__imgcont::before {
+  position: absolute;
+  z-index: 1;
+  content: '';
+  border-radius: 50%;
+  top: 9rem;
+  left: 8rem;
+  height: 50%;
+  width: 45%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(
+    to left,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 1.25s linear infinite;
+}
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+/* Glancing animation */
+.description {
+  margin-top: 2.4rem;
+  width: 27.8rem;
+  height: 12.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1440px) {
+  .description {
+    width: 30.2rem;
+    height: 14rem;
+  }
+}
+.description__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.772rem;
+  color: #ffffff;
+  transition: color 1s ease;
+}
+@media (min-width: 1440px) {
+  .description__title:hover {
+    cursor: pointer;
+    color: #00fff8;
+  }
+}
+.description__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #8bacd9;
+}
+.description__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.description__bottom::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #2e405a;
+  bottom: -1.6rem;
+}
+.description__eth {
+  width: 8.848rem;
+  display: flex;
+  justify-content: space-between;
+}
+.description__prize {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.89rem;
+  color: #00fff8;
+}
+@media (min-width: 1440px) {
+  .description__prize {
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+  }
+}
+.description__time {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.89rem;
+  color: #8bacd9;
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .description__time {
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+  }
+}
+.description__time::before {
+  content: '';
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url(../images/icon-clock.svg);
+  background-size: cover;
+  bottom: 0.1rem;
+  left: -2.3rem;
+}
+.footer {
+  margin-top: 3.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.footer__avatar {
+  width: 3.3rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+.footer__author {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.89rem;
+  color: #8bacd9;
+}
+@media (min-width: 1440px) {
+  .footer__author {
+    font-size: 1.6rem;
+    line-height: 2.016rem;
+  }
+}
+.footer__author--name {
+  color: #ffffff;
+  transition: color 1s ease;
+}
+@media (min-width: 1440px) {
+  .footer__author--name:hover {
+    cursor: pointer;
+    color: #00fff8;
+  }
+}
