@@ -38,8 +38,8 @@ Desktop Size:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://base-apparel-comingsoon-site.netlify.app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-ToSmLKb1fn)
+- Live Site URL: [Live Site](https://base-apparel-comingsoon-site.netlify.app/)
 
 ## My process
 
