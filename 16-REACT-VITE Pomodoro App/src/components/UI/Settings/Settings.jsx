@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import { useSettingsContext } from '../../../context/useSettingsContext';
 import CloseButton from '../../Buttons/ButtonClose';
 import { StyledH4, StyledSettingsH2 } from '../../Headings/Headings';
+import ColorSection from './Inputs/ColorInputs/ColorSection';
+import FontSection from './Inputs/FontInputs/FontSection';
 import NumberContainer from './Inputs/NumberInputs/NumberContainer';
 import NumberRow from './Inputs/NumberInputs/NumberRow';
+import SubmitButton from './Inputs/SubmitButton';
 import SettingsHeader from './SettingsHeader';
 // Hooks
 
@@ -14,6 +17,8 @@ const StyledSettings = styled.form`
   height: 54.9rem;
   background-color: ${({ theme }) => theme.white};
   border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
   @media (min-width: 768px) {
     width: 70%;
     heigth: 46.4rem;
@@ -36,7 +41,7 @@ const StyledBackdrop = styled.div`
 `;
 const appStates = ['pomodoro', 'shortBreak', 'longBreak'];
 
-const Settings = ({ closeSettings }) => {
+const Settings = ({ closeSettings, margin }) => {
   // Array settings hour config - context
   const [settings, setSettings] = useSettingsContext();
   const decreaseValueHandler = (e, index) => {
@@ -73,7 +78,9 @@ const Settings = ({ closeSettings }) => {
           <StyledSettingsH2>Settings</StyledSettingsH2>
           <CloseButton closeSettings={closeSettings} />
         </SettingsHeader>
-        <StyledH4>time (minutes)</StyledH4>
+        <StyledH4 margin="0 0 0 4rem" alignSelf="flex-start">
+          time (minutes)
+        </StyledH4>
         <NumberContainer>
           {appStates.map((row, index) => {
             return (
@@ -88,6 +95,9 @@ const Settings = ({ closeSettings }) => {
             );
           })}
         </NumberContainer>
+        <FontSection />
+        <ColorSection />
+        <SubmitButton />
       </StyledSettings>
     </StyledBackdrop>
   );

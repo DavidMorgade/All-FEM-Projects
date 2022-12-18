@@ -1,0 +1,60 @@
+.main {
+  &__text {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      margin-left: 16.5rem;
+    }
+  }
+  &__heading {
+    @include remove-margins;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 4.2rem;
+    letter-spacing: 1.083rem;
+    font-weight: 300;
+    color: $textPink;
+    @include desktop {
+      text-align: left;
+      font-size: 6.4rem;
+      line-height: 6.4rem;
+      letter-spacing: 1.732rem;
+    }
+    &--mod {
+      display: block;
+      color: $brown;
+      font-weight: 600;
+      @include desktop {
+        line-height: 7.1rem;
+        letter-spacing: 1.732rem;
+      }
+    }
+    &--modDesktop {
+      @include desktop {
+        display: block;
+      }
+    }
+  }
+  &__description {
+    text-align: center;
+    @include remove-margins;
+    font-weight: 400;
+    color: $textPink;
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    margin: 1.6rem 3rem 3.2rem;
+    @include desktop {
+      @include remove-margins;
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+      max-width: 60%;
+      margin: 2rem 0 4rem;
+    }
+  }
+}

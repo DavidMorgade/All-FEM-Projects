@@ -1,0 +1,32 @@
+@import 'loadingSpinner';
+@import 'success';
+
+.alert {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: $red;
+  position: absolute;
+  bottom: -4rem;
+  left: 10rem;
+  @include desktop {
+    left: 1rem;
+  }
+  &__image {
+    position: absolute;
+    align-self: center;
+    right: 30%;
+    @include tablet {
+      right: 20%;
+    }
+    @include desktop {
+      right: 45%;
+    }
+    @include desktopXl {
+      right: 37%;
+    }
+  }
+}
+.invalid {
+  border: 2px solid $red;
+}

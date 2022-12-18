@@ -1,0 +1,16 @@
+@import 'base';
+@import 'header';
+@import 'picture';
+@import 'text';
+@import 'form';
+@import 'validation';
+@import 'animations';
+
+.main {
+  display: grid;
+
+  @include desktop {
+    min-height: 100vh;
+    grid-template-columns: 60% 40%;
+  }
+}

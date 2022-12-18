@@ -6,6 +6,9 @@ const StyledLabel = styled.label`
   line-height: 1.488rem;
   color: ${({ theme }) => theme.body};
   opacity: 0.4;
+  @media (min-width: 768px) {
+    line-height: 1.5rem;
+  }
 `;
 
 const StyledH4 = styled.h4`
@@ -14,6 +17,12 @@ const StyledH4 = styled.h4`
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1.8rem;
+  font-size: 1.3rem;
+  @media (min-width: 768px) {
+    align-self: ${(props) => props.alignSelf};
+    margin: ${(props) => props.margin};
+    margin-bottom: 0;
+  }
 `;
 const StyledH3 = styled.h3`
   margin: 0;
@@ -36,6 +45,10 @@ const StyledSettingsH2 = styled.h2`
   line-height: 2.48rem;
   margin: 0;
   color: ${({ theme }) => theme.menuText};
+  @media (min-width: 768px) {
+    font-size: 2.8rem;
+    line-height: 3.473rem;
+  }
 `;
 
 export {

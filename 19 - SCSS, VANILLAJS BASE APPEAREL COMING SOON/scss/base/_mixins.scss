@@ -1,0 +1,41 @@
+@use 'variables' as v;
+
+/** Media Queries **/
+@mixin phone {
+  @media (min-width: v.$phone) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+@mixin desktopXl {
+  @media (min-width: v.$desktopXl) {
+    @content;
+  }
+}
+//reset margins paddins
+@mixin remove-margins {
+  margin: 0;
+  padding: 0;
+}
+// grid
+@mixin grid($columnas, $espaciado) {
+  display: grid;
+  gap: $espaciado;
+  grid-template-columns: repeat($columnas, 1fr);
+}
+// bg image
+@mixin bgImage($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+}

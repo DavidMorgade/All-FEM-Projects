@@ -1,6 +1,7 @@
 export const lightTheme = {
   body: '#1E213F',
   text: '#D7E0FF',
+  line: '#E3E1E1',
   menuText: '#161932',
   change: '#F87070',
   white: '#FFFFFF',
