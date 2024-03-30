@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mobile-width: 768px;
+  --tablet-width: 1024px;
+  --desktop-width: 1440px;
+
+  --primary-color: hsl(75, 94%, 57%);
+  --white-color: hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 20%);
+  --lightGrey-color: hsl(0, 0%, 90%);
+  --darkGrey-color: hsl(0, 0%, 12%);
+  --offBlack-color: hsl(0, 0%, 8%);
+
+  --fontSizeSmall: 14px;
+  --fontSizeMedium: 16px;
+  --fontSizeLarge: 32px;
+
+  --fontFamily: "Inter", sans-serif;
+
+  --fontSmallWeight: 400;
+  --fontMediumWeight: 600;
+  --fontLargeWeight: 700;
+}
+
+body {
+  font-family: var(--fontFamily);
+  color: var(--white-color);
+  background-color: var(--offBlack-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem 2rem;
+  background-color: var(--darkGrey-color);
+  max-width: 25rem;
+  width: 70%;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.img__container img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.main h1 {
+  font-size: var(--fontSizeLarge);
+  font-weight: var(--fontMediumWeight);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.main h2 {
+  font-size: var(--fontSizeMedium);
+  font-weight: var(--fontLargeWeight);
+  line-height: 2;
+  color: var(--primary-color);
+}
+.main p {
+  font-size: var(--fontSizeMedium);
+  font-weight: var(--fontMediumWeight);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+  color: var(--lightGrey-color);
+}
+.links__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  list-style: none;
+  padding: 0;
+}
+.links__list li {
+  text-decoration: none;
+  min-height: 3rem;
+  min-width: 20rem;
+  display: grid;
+  align-content: center;
+}
+.links__list li a {
+  padding: 1rem;
+  color: var(--white-color);
+  font-size: var(--fontSizeMedium);
+  font-weight: var(--fontMediumWeight);
+  background-color: var(--grey-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.links__list li a:hover {
+  color: var(--primary-color);
+  background-color: var(--offBlack-color);
+}
